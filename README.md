@@ -1,2 +1,2 @@
 # React Colored Cards Project
-![App Photo] (./appPhoto.jpg)
+![App Photo] (appPhoto.jpg)
