@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Square from "./Square"
+import Input from "./Input"
+import {useState} from "react"
 function App() {
+  const [colorValue,setColorValue] = useState("");
+  const [fontColor,setFontColor] = useState("black");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <h1> Colored Cards Project</h1>
+
+    <Square 
+    colorValue={colorValue}
+    fontColor={fontColor}
+    />
+    <Input 
+    colorValue={colorValue}
+    setColorValue={setColorValue}
+    setFontColor={setFontColor}
+    fontColor={fontColor}
+    />
+
     </div>
   );
 }
